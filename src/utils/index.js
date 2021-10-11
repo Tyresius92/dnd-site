@@ -672,7 +672,7 @@ const backstories = [
   'woke up in a bar with no memory and a sealed letter',
   'was once a dungeon trap designer',
   'is haunted by the ghosts of their forefathers',
-  "doesn't have time for all this prophecy bullshit",
+  "doesn't have time for all this prophecy nonsense",
   'is dealing with a midlife crisis',
   'has delusions of grandeur',
   'just wants their money back',
