@@ -23,7 +23,7 @@
     "checkPrettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --check \"src/**/*.js\"",
     "lint": "node_modules/.bin/eslint --color --ext js,jsx ./src",
     "lintify": "node_modules/.bin/eslint --color --fix --ext js,jsx ./src",
-    "fix": "npm run prettify && npm run lintify && npm run sniff",
+    "fix": "npm run lintify && npm run prettify && npm run sniff",
     "smellsGood": "echo Great success!! Your code smells goooood!",
     "sniff": "npm run checkPrettier && npm run lint && npm run smellsGood"
   },

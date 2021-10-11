@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 const getRandomArrayElement = array =>
   array[Math.floor(Math.random() * array.length)];
 

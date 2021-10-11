@@ -15,7 +15,7 @@ import 'firebase/analytics';
 
 const { generateHeaderText, generateBodyText, generateButtonText } = utils;
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
   },
@@ -45,13 +45,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCZuvvXaXQ10e0VZb8T2izGGNEGCUAkUCI",
-  authDomain: "dnd-site-3726c.firebaseapp.com",
-  projectId: "dnd-site-3726c",
-  storageBucket: "dnd-site-3726c.appspot.com",
-  messagingSenderId: "470782595057",
-  appId: "1:470782595057:web:a1a98df0d3c91faa49fe50",
-  measurementId: "G-08WC0M6YBJ"
+  apiKey: 'AIzaSyCZuvvXaXQ10e0VZb8T2izGGNEGCUAkUCI',
+  authDomain: 'dnd-site-3726c.firebaseapp.com',
+  projectId: 'dnd-site-3726c',
+  storageBucket: 'dnd-site-3726c.appspot.com',
+  messagingSenderId: '470782595057',
+  appId: '1:470782595057:web:a1a98df0d3c91faa49fe50',
+  measurementId: 'G-08WC0M6YBJ',
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -61,7 +61,7 @@ const App = () => {
   useEffect(() => {
     analytics.logEvent('page_load');
   }, []);
-  
+
   const classes = useStyles();
 
   const [header, setHeader] = useState(generateHeaderText());
@@ -107,7 +107,7 @@ const App = () => {
           </Typography>
           <IconButton
             color="inherit"
-            href="https://github.com/Tyresius92"
+            href="https://github.com/Tyresius92/dnd-site"
             onClick={() => analytics.logEvent('github_icon_click')}
           >
             <GitHubIcon color="inherit" />
